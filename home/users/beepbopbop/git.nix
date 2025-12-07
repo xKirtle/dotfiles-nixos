@@ -3,6 +3,10 @@
 {
   programs.git = {
     enable = true;
+    extraConfig = {
+      gpg.format = "ssh";
+      gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
+    };
 
     # Default identity can stay empty; includeIf blocks below set per-directory identities.
     includes = [
@@ -12,7 +16,7 @@
           user = {
             name = "xKirtle";
             email = "rodm.martins@proton.me";
-            signingkey = "8ECF2A4CCAC44B13";
+            signingkey = "~/.ssh/github_xkirtle_ed25519.pub";
           };
           commit.gpgSign = true;
         };
@@ -23,11 +27,14 @@
           user = {
             name = "Rodrigo Martins";
             email = "rodrigo.martins@unit4.com";
-            signingkey = "47787D3E30F2D9C9";
+            # signingkey = "~/.ssh/github_xkirtle_ed25519.pub";
           };
-          commit.gpgSign = true;
+          commit.gpgSign = false;
         };
       }
     ];
   };
+
+  # Allow SSH-based signatures to verify locally.
+  home.file.".ssh/allowed_signers".source = secrets/ssh/github_xkirtle_ed25519.pub;
 }
