@@ -128,6 +128,8 @@
           "tiling-assistant@leleat-on-github"
           "proton-vpn@fthx"
           "draw-on-gnome@daveprowse.github.io"
+          "no-overview@fthx"
+          "nightthemeswitcher@romainvigier.fr"
         ];
         favorite-apps=[
           "brave-browser.desktop"
@@ -220,6 +222,13 @@
         toggle-tiling-popup = ["disabled"];
       };
 
+      "org/gnome/shell/extensions/nightthemeswitcher/time" = {
+        manual-schedule = true;
+        nightthemeswitcher-ondemand-keybinding = "[<Shift><Super>t]";
+        sunrise = 10.0;
+        sunset = 18.0;
+      };
+
       "org/gtk/gtk4/settings/file-chooser" = {
         show-hidden = true;
       };
@@ -259,5 +268,4 @@
         visible-name = "Default";
       };
     };
-
 }
