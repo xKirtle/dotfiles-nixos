@@ -35,6 +35,6 @@
     ];
   };
 
-  # Allow SSH-based signatures to verify locally.
-  home.file.".ssh/allowed_signers".source = secrets/ssh/github_xkirtle_ed25519.pub;
+  # Allow SSH-based signatures to verify locally; edit files/ssh/allowed_signers to add more keys.
+  home.file.".ssh/allowed_signers".source = ./files/ssh/allowed_signers;
 }

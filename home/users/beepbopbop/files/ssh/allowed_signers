@@ -1,0 +1,4 @@
+# allowed_signers for SSH-based Git signatures
+# Format: principal keytype base64 [comment]
+# Add additional signers on new lines (e.g., personal/work keys).
+personal ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAjKMHInRrqJqOYvx1rTzLBr6BUIIEmXZC2q5BHXFaix GitHub (xKirtle)
