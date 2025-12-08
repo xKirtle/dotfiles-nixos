@@ -13,4 +13,8 @@
 
   # Require U2F for sudo, falling back to the normal password prompt if the key is unavailable.
   security.pam.services.sudo.u2fAuth = true;
+
+  # Do not prompt for U2F at graphical or tty login.
+  security.pam.services.login.u2fAuth = false;
+  security.pam.services.gdm-password.u2fAuth = false;
 }
