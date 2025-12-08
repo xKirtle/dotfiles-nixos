@@ -7,17 +7,17 @@
     brave
     dconf-editor
     docker
+    dotnetCorePackages.sdk_10_0-bin
     eza
     fastfetch
     freelens-bin
     go
-    jetbrains-toolbox
+    jetbrains.rider
     libnotify
     nwg-look
     pavucontrol
     powershell
     proton-pass
-    protontricks
     protonup-qt
     protonvpn-gui
     sassc
