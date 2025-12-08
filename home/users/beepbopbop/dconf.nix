@@ -63,7 +63,6 @@
         control-center = ["<Shift><Super>s"];
         custom-keybindings = [
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
-          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
         ];
         home = ["<Super>e"];
         logout = ["disabled"];
@@ -86,12 +85,6 @@
         binding = "<Super>Return";
         command = "gnome-terminal";
         name = "Open Terminal";
-      };
-
-      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-        binding = "<Super>Escape";
-        command = "/etc/nixos/multi-tool cycle-audio-sink next";
-        name = "Cycle audio sinks";
       };
 
       "org/gnome/shell/keybindings" = {
@@ -130,6 +123,7 @@
           "draw-on-gnome@daveprowse.github.io"
           "no-overview@fthx"
           "nightthemeswitcher@romainvigier.fr"
+          "audio-switch-shortcuts@dbatis.github.com"
         ];
         favorite-apps=[
           "brave-browser.desktop"
@@ -227,6 +221,17 @@
         nightthemeswitcher-ondemand-keybinding = "[<Shift><Super>t]";
         sunrise = 10.0;
         sunset = 18.0;
+      };
+
+      "org/gnome/shell/extensions/audio-switch-shortcuts" = {
+        # Remove audio-devices prop to reset to automatic detection
+        audio-devices = ''[
+          {"id":19,"name":"Digital Output (S/PDIF) - Family 17h/19h/1ah HD Audio Controller","type":"OUTPUT","cycled":true,"active":true},
+          {"id":5,"name":"Direct Scarlett Solo 4th Gen - Scarlett Solo 4th Gen","type":"OUTPUT","cycled":true,"active":true}
+        ]'';
+        cycle-input-hotkey = ["disabled"];
+        cycle-output-hotkey = ["<Super>Escape"];
+        show-volume-osd = false;
       };
 
       "org/gtk/gtk4/settings/file-chooser" = {
