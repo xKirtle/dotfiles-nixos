@@ -124,6 +124,8 @@
           "no-overview@fthx"
           "nightthemeswitcher@romainvigier.fr"
           "audio-switch-shortcuts@dbatis.github.com"
+          "status-area-horizontal-spacing@mathematical.coffee.gmail.com"
+          "tweaks-system-menu@extensions.gnome-shell.fifi.org"
         ];
         favorite-apps=[
           "brave-browser.desktop"
@@ -232,6 +234,10 @@
         cycle-input-hotkey = ["disabled"];
         cycle-output-hotkey = ["<Super>Escape"];
         show-volume-osd = false;
+      };
+
+      "org/gnome/shell/extensions/status-area-horizontal-spacing" = {
+        hpadding = 6;
       };
 
       "org/gtk/gtk4/settings/file-chooser" = {
