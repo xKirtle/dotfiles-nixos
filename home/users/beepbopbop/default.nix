@@ -16,5 +16,6 @@
     ./peripherals.nix
     ./ssh.nix
     ./git.nix
+    ./u2f.nix
   ];
 }

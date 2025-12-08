@@ -2,7 +2,7 @@
 
 {
   networking = {
-    hostName = "nixos";
+    hostName = "beepbopbop";
     networkmanager.enable = true;
   };
 

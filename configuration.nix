@@ -19,6 +19,7 @@
     ./modules/system/udev.nix
     ./modules/system/fonts.nix
     ./modules/system/users.nix
+    ./modules/system/u2f.nix
     ./modules/programs.nix
     ./modules/desktop/gnome.nix
     <home-manager/nixos>
