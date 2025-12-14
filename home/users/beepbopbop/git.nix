@@ -3,7 +3,7 @@
 {
   programs.git = {
     enable = true;
-    extraConfig = {
+    settings = {
       gpg.format = "ssh";
       gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
     };

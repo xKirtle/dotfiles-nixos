@@ -6,6 +6,7 @@
 
     shellAliases = {
       ls = "eza -a --icons=always";
+      nix-reload = "sudo nixos-rebuild switch";
     };
 
     interactiveShellInit = ''
