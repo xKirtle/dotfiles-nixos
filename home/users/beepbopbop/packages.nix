@@ -12,6 +12,8 @@
     fastfetch
     freelens-bin
     go
+    gcc
+    heroic
     jetbrains.goland
     jetbrains.rider
     libnotify
