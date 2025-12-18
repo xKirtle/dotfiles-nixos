@@ -12,6 +12,7 @@
     fastfetch
     freelens-bin
     go
+    jetbrains.goland
     jetbrains.rider
     libnotify
     nwg-look
