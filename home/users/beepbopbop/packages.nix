@@ -6,6 +6,7 @@
     audacity
     azure-cli
     brave
+    codex
     dconf-editor
     docker
     dotnetCorePackages.sdk_10_0-bin
