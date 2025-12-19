@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    p7zip
     audacity
     azure-cli
     brave
