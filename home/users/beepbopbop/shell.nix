@@ -26,6 +26,45 @@
         yt-dlp -t mp3 $argv
       '';
     };
+
+    functions."7z-min" = {
+      description = "Create a 7z archive with no compression";
+      body = ''
+        if test (count $argv) -lt 2
+          echo "usage: 7z-min <archive.7z> <paths...>"
+          return 1
+        end
+        set archive $argv[1]
+        set targets $argv[2..-1]
+        7z a -t7z -mx=0 "$archive" $targets
+      '';
+    };
+
+    functions."7z-medium" = {
+      description = "Create a 7z archive with medium compression";
+      body = ''
+        if test (count $argv) -lt 2
+          echo "usage: 7z-medium <archive.7z> <paths...>"
+          return 1
+        end
+        set archive $argv[1]
+        set targets $argv[2..-1]
+        7z a -t7z -mx=5 "$archive" $targets
+      '';
+    };
+
+    functions."7z-max" = {
+      description = "Create a 7z archive with maximum compression";
+      body = ''
+        if test (count $argv) -lt 2
+          echo "usage: 7z-max <archive.7z> <paths...>"
+          return 1
+        end
+        set archive $argv[1]
+        set targets $argv[2..-1]
+        7z a -t7z -m0=lzma2 -mx=9 "$archive" $targets
+      '';
+    };
   };
 
   programs.starship = {
