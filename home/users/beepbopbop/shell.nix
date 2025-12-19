@@ -15,6 +15,17 @@
         fastfetch
       end
     '';
+
+    functions."yt-mp3" = {
+      description = "Download audio as mp3 via yt-dlp";
+      body = ''
+        if test (count $argv) -lt 1
+          echo "usage: yt-mp3 <url>"
+          return 1
+        end
+        yt-dlp -t mp3 $argv
+      '';
+    };
   };
 
   programs.starship = {

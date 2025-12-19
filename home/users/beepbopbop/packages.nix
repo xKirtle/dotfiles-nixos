@@ -34,5 +34,6 @@
     vscode
     wl-clipboard
     wofi-emoji
+    yt-dlp
   ];
 }
