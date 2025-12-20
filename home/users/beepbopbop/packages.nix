@@ -6,12 +6,14 @@
     audacity
     azure-cli
     brave
+    calibre
     codex
     dconf-editor
     docker
     dotnetCorePackages.sdk_10_0-bin
     eza
     fastfetch
+    foliate
     freelens-bin
     go
     gcc
