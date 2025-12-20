@@ -31,6 +31,7 @@
     solaar
     starship
     spotify
+    teams-for-linux
     unzip
     vesktop
     vlc

@@ -13,7 +13,7 @@
     ./xdg.nix
     ./autostart.nix
     ./fastfetch.nix
-    ./peripherals.nix
+    ./configFiles.nix
     ./ssh.nix
     ./git.nix
     ./u2f.nix
