@@ -13,7 +13,9 @@
     dotnetCorePackages.sdk_10_0-bin
     eza
     fastfetch
+    file
     foliate
+    fragments
     freelens-bin
     go
     gcc
@@ -21,16 +23,19 @@
     jetbrains.goland
     jetbrains.rider
     libnotify
+    lsfg-vk
+    lsfg-vk-ui
     nwg-look
     pavucontrol
     powershell
     proton-pass
     protonup-qt
     protonvpn-gui
+    qbittorrent # can't decide between this and fragments
     sassc
     solaar
-    starship
     spotify
+    starship
     teams-for-linux
     unzip
     vesktop
