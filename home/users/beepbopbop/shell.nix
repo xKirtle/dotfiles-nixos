@@ -65,6 +65,34 @@
         7z a -t7z -m0=lzma2 -mx=9 "$archive" $targets
       '';
     };
+
+    functions."7z-unzip" = {
+      description = "Extract any archive supported by 7z";
+      body = ''
+        if test (count $argv) -lt 1
+          echo "usage: 7z-unzip <archive> [destination]"
+          return 1
+        end
+
+        set archive $argv[1]
+        set dest "."
+        if test (count $argv) -ge 2
+          set dest $argv[2]
+          mkdir -p $dest
+        end
+
+        7z x "$archive" -o"$dest"
+      '';
+    };
+
+    functions."nix-cleanup" = {
+      description = "Clean up old nix store generations and garbage collect";
+      body = ''
+        sudo nix-collect-garbage -d
+        sudo nix-env --delete-generations old
+        sudo nix-store --optimise
+      '';
+    }
   };
 
   programs.starship = {
