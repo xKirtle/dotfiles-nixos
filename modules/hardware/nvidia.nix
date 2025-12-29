@@ -1,5 +1,11 @@
 { pkgs, ... }:
 
+let
+  u = import <nixos-unstable> {
+    system = pkgs.system;
+    config.allowUnfree = true;
+  };
+in
 {
   services.xserver.videoDrivers = [ "nvidia" ];
 
@@ -8,6 +14,10 @@
     modesetting.enable = true;        # Required for Wayland
     nvidiaSettings = true;            # Installs nvidia-settings GUI
     powerManagement.enable = true;    # Helps with Sleep/Resume
+
+    # Pull ONLY the NVIDIA driver from unstable:
+    # package = u.linuxPackages.nvidiaPackages.latest;
+    package = u.linuxPackages.nvidiaPackages.beta;
   };
 
   hardware.graphics = {

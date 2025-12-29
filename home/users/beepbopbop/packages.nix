@@ -1,5 +1,11 @@
 { pkgs, ... }:
 
+let
+  u = import <nixos-unstable> {
+    system = pkgs.system;
+    config.allowUnfree = true;
+  };
+in
 {
   home.packages = with pkgs; [
     p7zip
@@ -23,26 +29,28 @@
     jetbrains.goland
     jetbrains.rider
     libnotify
-    lsfg-vk
-    lsfg-vk-ui
     nwg-look
     pavucontrol
     powershell
     proton-pass
     protonup-qt
     protonvpn-gui
-    qbittorrent # can't decide between this and fragments
+    qbittorrent
     sassc
     solaar
     spotify
     starship
     teams-for-linux
     unzip
-    vesktop
     vlc
     vscode
     wl-clipboard
     wofi-emoji
     yt-dlp
+
+    # unstable
+    u.lsfg-vk
+    u.lsfg-vk-ui
+    u.vesktop
   ];
 }
