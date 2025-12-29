@@ -93,6 +93,38 @@
         sudo nix-store --optimise
       '';
     };
+
+    functions."nix-update" = {
+      description = "Update all nix channels and rebuild NixOS";
+      body = ''
+        sudo nix-channel --update
+        sudo nixos-rebuild switch
+      '';
+    };
+
+    functions."nix-update-stable" = {
+      description = "Update nixos-stable channel and rebuild";
+      body = ''
+        sudo nix-channel --update nixos
+        sudo nixos-rebuild switch
+      '';
+    };
+
+    functions."nix-update-unstable" = {
+      description = "Update nixos-unstable channel and rebuild";
+      body = ''
+        sudo nix-channel --update nixos-unstable
+        sudo nixos-rebuild switch
+      '';
+    };
+
+    functions."nix-update-hm" = {
+      description = "Update home-manager channel and rebuild";
+      body = ''
+        sudo nix-channel --update home-manager
+        sudo nixos-rebuild switch
+      '';
+    };
   };
 
   programs.starship = {
