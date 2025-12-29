@@ -9,7 +9,7 @@ self: super:
       owner = "vinceliuice";
       repo = "Colloid-gtk-theme";
       rev = "master";
-      sha256 = "sha256-3PCDrZ+7PQGi4n/3XY1ikeOjbYgZ1+anihZm9raW3CM=";
+      sha256 = "sha256-BnULzudLLxzz7hYnUSwW6cbc7F3hX1dR3VHnxrA0zcM=";
     };
 
     installPhase = ''
@@ -44,7 +44,7 @@ self: super:
       owner = "vinceliuice";
       repo = "Colloid-icon-theme";
       rev = "master";
-      sha256 = "sha256-FZ3WUAQH80eteUO/+MJUuwEN8D43pQ8qrq+XBz2TiXM=";
+      sha256 = "sha256-Mice1/a22c1z2R7ToRioBzOJEJdmVHem6GebdiRof3s=";
     };
 
     dontCheckForBrokenSymlinks = true;
