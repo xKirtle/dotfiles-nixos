@@ -2,7 +2,7 @@
 
 let
   u = import <nixos-unstable> {
-    system = pkgs.system;
+    system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
   };
 in

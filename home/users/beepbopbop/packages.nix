@@ -2,13 +2,12 @@
 
 let
   u = import <nixos-unstable> {
-    system = pkgs.system;
+    system = pkgs.stdenv.hostPlatform.system;
     config.allowUnfree = true;
   };
 in
 {
   home.packages = with pkgs; [
-    p7zip
     audacity
     azure-cli
     brave
@@ -30,6 +29,7 @@ in
     jetbrains.rider
     libnotify
     nwg-look
+    p7zip
     pavucontrol
     powershell
     proton-pass
