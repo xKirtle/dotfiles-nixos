@@ -43,6 +43,7 @@ in
     starship
     teams-for-linux
     unzip
+    vesktop
     vlc
     vscode
     wl-clipboard
@@ -52,6 +53,5 @@ in
     # unstable
     u.lsfg-vk
     u.lsfg-vk-ui
-    u.vesktop
   ];
 }
