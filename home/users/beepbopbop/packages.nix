@@ -8,6 +8,7 @@ let
 in
 {
   home.packages = with pkgs; [
+    ArchiSteamFarm
     audacity
     azure-cli
     brave
