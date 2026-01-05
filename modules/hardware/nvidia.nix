@@ -13,7 +13,7 @@ in
     open = true;
     modesetting.enable = true;        # Required for Wayland
     nvidiaSettings = true;            # Installs nvidia-settings GUI
-    powerManagement.enable = true;    # Helps with Sleep/Resume
+    powerManagement.enable = false;    # Helps with Sleep/Resume
 
     # Pull ONLY the NVIDIA driver from unstable:
     # package = u.linuxPackages.nvidiaPackages.latest;
