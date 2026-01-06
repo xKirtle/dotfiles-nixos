@@ -10,7 +10,9 @@ in
   home.packages = with pkgs; [
     ArchiSteamFarm
     audacity
-    azure-cli
+    (azure-cli.withExtensions [ 
+      azure-cli.extensions.aks-preview 
+    ])
     brave
     calibre
     codex
@@ -23,6 +25,7 @@ in
     foliate
     fragments
     freelens-bin
+    gnome-boxes
     go
     gcc
     heroic
@@ -41,6 +44,7 @@ in
     solaar
     spotify
     starship
+    swtpm
     teams-for-linux
     unzip
     vesktop
