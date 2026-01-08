@@ -9,16 +9,17 @@ in
 {
   home.packages = with pkgs; [
     ArchiSteamFarm
-    audacity
+    u.audacity
     (azure-cli.withExtensions [ 
       azure-cli.extensions.aks-preview 
     ])
     brave
     calibre
-    codex
+    u.codex
     dconf-editor
     docker
-    dotnetCorePackages.sdk_10_0-bin
+    dotnetCorePackages.sdk_9_0-bin
+    # dotnetCorePackages.sdk_10_0-bin
     eza
     fastfetch
     file
@@ -32,6 +33,8 @@ in
     jetbrains.goland
     jetbrains.rider
     libnotify
+    u.lsfg-vk
+    u.lsfg-vk-ui
     nwg-look
     p7zip
     pavucontrol
@@ -53,9 +56,5 @@ in
     wl-clipboard
     wofi-emoji
     yt-dlp
-
-    # unstable
-    u.lsfg-vk
-    u.lsfg-vk-ui
   ];
 }
