@@ -6,16 +6,17 @@
   home.stateVersion = "25.11";
 
   imports = [
-    ./gtk.nix
-    ./dconf.nix
-    ./shell.nix
-    ./packages.nix
-    ./xdg.nix
     ./autostart.nix
-    ./fastfetch.nix
     ./configFiles.nix
-    ./ssh.nix
+    ./dconf.nix
+    ./dotnet.nix
+    ./fastfetch.nix
     ./git.nix
+    ./gtk.nix
+    ./packages.nix
+    ./shell.nix
+    ./ssh.nix
     ./u2f.nix
+    ./xdg.nix
   ];
 }
