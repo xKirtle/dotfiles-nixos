@@ -14,10 +14,13 @@ in
       azure-cli.extensions.aks-preview 
     ])
     brave
+    btop-cuda
     calibre
     u.codex
     dconf-editor
-    discord
+    (discord.override {
+      withVencord = true;
+    })
     docker
     eza
     fastfetch

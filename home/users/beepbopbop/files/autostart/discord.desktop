@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Name=Vesktop
-Icon=vesktop
-Exec=vesktop --start-minimized
+Name=Discord
+Icon=discord
+Exec=discord --start-minimized
 X-GNOME-Autostart-enabled=true
