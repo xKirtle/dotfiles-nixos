@@ -18,8 +18,6 @@ in
     u.codex
     dconf-editor
     docker
-    dotnetCorePackages.sdk_9_0-bin
-    # dotnetCorePackages.sdk_10_0-bin
     eza
     fastfetch
     file
