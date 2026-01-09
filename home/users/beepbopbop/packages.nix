@@ -17,6 +17,7 @@ in
     calibre
     u.codex
     dconf-editor
+    discord
     docker
     eza
     fastfetch

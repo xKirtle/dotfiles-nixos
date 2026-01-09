@@ -2,6 +2,10 @@
 
 {
   services.xserver.enable = true;
+  services.xserver.excludePackages = with pkgs; [
+    xterm
+  ];
+
   services.desktopManager.gnome.enable = true;
   services.displayManager = {
     gdm = {
@@ -27,6 +31,11 @@
     gst_all_1.gst-plugins-ugly
     gst_all_1.gst-libav
     gst_all_1.gst-vaapi
+  ];
+
+  environment.gnome.excludePackages = with pkgs; [
+    gnome-tour
+    gnome-console
   ];
 
   environment.variables = {
