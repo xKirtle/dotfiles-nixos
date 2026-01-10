@@ -130,7 +130,7 @@
         favorite-apps=[
           "brave-browser.desktop"
           "org.gnome.Nautilus.desktop"
-          "vesktop.desktop"
+          "discord.desktop"
           "steam.desktop"
           "spotify.desktop"
           "code.desktop"
