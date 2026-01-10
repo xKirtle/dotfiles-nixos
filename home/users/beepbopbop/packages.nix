@@ -45,6 +45,7 @@ in
     protonup-qt
     protonvpn-gui
     qbittorrent
+    r2modman
     sassc
     solaar
     spotify
