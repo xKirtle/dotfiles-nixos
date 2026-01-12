@@ -53,7 +53,6 @@ in
     swtpm
     teams-for-linux
     unzip
-    vesktop
     vlc
     vscode
     wl-clipboard
