@@ -6,6 +6,7 @@
   home.stateVersion = "25.11";
 
   imports = [
+    ./automount.nix
     ./autostart.nix
     ./configFiles.nix
     ./dconf.nix
