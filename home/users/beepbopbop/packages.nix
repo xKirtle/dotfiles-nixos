@@ -34,9 +34,11 @@ in
     heroic
     jetbrains.goland
     jetbrains.rider
+    jetbrains.webstorm
     libnotify
     u.lsfg-vk
     u.lsfg-vk-ui
+    nodejs_24
     nwg-look
     p7zip
     pavucontrol
