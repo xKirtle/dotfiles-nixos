@@ -5,7 +5,7 @@
     isNormalUser = true;
     description = "username";
     home = "/home/beepbopbop";
-    extraGroups = [ "networkmanager" "wheel" "input" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "docker" ];
     shell = pkgs.fish;
   };
 }

@@ -36,6 +36,7 @@ let
     (
       with dotnetCorePackages;
       combinePackages [
+        (dotnetCorePackages.sdk_10_0-bin)
         (sdk_9_0.overrideAttrs sdkOverride)
         (sdk_8_0.overrideAttrs sdkOverride)
       ]
