@@ -106,6 +106,7 @@
           "dash-to-dock@micxgx.gmail.com"
           "night-light-toggle@egoistpizza.github.com"
           "pop-shell@system76.com"
+          "nightthemeswitcher@romainvigier.fr"
         ];
         enabled-extensions = [
           "clipboard-indicator@tudmotu.com"
@@ -122,7 +123,6 @@
           "proton-vpn@fthx"
           "draw-on-gnome@daveprowse.github.io"
           "no-overview@fthx"
-          "nightthemeswitcher@romainvigier.fr"
           "audio-switch-shortcuts@dbatis.github.com"
           "status-area-horizontal-spacing@mathematical.coffee.gmail.com"
           "tweaks-system-menu@extensions.gnome-shell.fifi.org"
