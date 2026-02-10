@@ -33,8 +33,8 @@ in
     gcc
     heroic
     jetbrains.goland
-    jetbrains.rider
-    jetbrains.webstorm
+    u.jetbrains.rider
+    u.jetbrains.webstorm
     libnotify
     u.lsfg-vk
     u.lsfg-vk-ui
@@ -42,10 +42,12 @@ in
     nwg-look
     p7zip
     pavucontrol
+    postman
     powershell
     proton-pass
     protonup-qt
     protonvpn-gui
+    python315
     qbittorrent
     r2modman
     sassc

@@ -11,7 +11,6 @@
     ./configFiles.nix
     ./dconf.nix
     ./dotnet.nix
-    ./fastfetch.nix
     ./git.nix
     ./gtk.nix
     ./packages.nix

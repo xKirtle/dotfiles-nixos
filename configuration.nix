@@ -22,6 +22,7 @@
     ./modules/system/users.nix
     ./modules/programs.nix
     ./modules/desktop/gnome.nix
+    # ./modules/system/postgres.nix
     <home-manager/nixos>
     ./home-manager.nix
   ];

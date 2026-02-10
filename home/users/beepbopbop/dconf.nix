@@ -134,7 +134,6 @@
           "steam.desktop"
           "spotify.desktop"
           "code.desktop"
-          "org.gnome.Geary.desktop"
         ];
         last-selected-power-profile = "performance";
         welcome-dialog-last-shown-version = "49.2";
