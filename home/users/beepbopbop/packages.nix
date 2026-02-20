@@ -28,6 +28,7 @@ in
     foliate
     fragments
     freelens-bin
+    gdlauncher-carbon
     gnome-boxes
     go
     gcc

@@ -227,17 +227,17 @@
       "org/gnome/shell/extensions/audio-switch-shortcuts" = {
         # Remove audio-devices prop to reset to automatic detection
         audio-devices=''[
-          {"id":19,"name":"Digital Output (S/PDIF) - Family 17h/19h/1ah HD Audio Controller","type":"OUTPUT","cycled":true,"active":false},
-          {"id":6,"name":"Direct Scarlett Solo 4th Gen - Scarlett Solo 4th Gen","type":"OUTPUT","cycled":true,"active":true},
           {"id":1,"name":"Dummy Output","type":"OUTPUT","cycled":false,"active":false},{"id":2,"name":"HDMI / DisplayPort - GB203 High Definition Audio Controller","type":"OUTPUT","cycled":false,"active":true},
           {"id":3,"name":"HDMI / DisplayPort 2 - GB203 High Definition Audio Controller","type":"OUTPUT","cycled":false,"active":true},
-          {"id":7,"name":"Direct Scarlett Solo 4th Gen - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},{"id":8,"name":"Headphones / Line 1-2 - Scarlett Solo 4th Gen","type":"OUTPUT","cycled":false,"active":true},
-          {"id":9,"name":"Monitor Input 4 - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},{"id":10,"name":"Monitor Input 3 - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},
+          {"id":7,"name":"Direct Scarlett Solo 4th Gen - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":false},
+          {"id":8,"name":"Headphones / Line 1-2 - Scarlett Solo 4th Gen","type":"OUTPUT","cycled":true,"active":true},
+          {"id":9,"name":"Monitor Input 4 - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":false},
+          {"id":10,"name":"Monitor Input 3 - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":false},
           {"id":11,"name":"Input 2 Mic - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},
-          {"id":12,"name":"Input 1 Inst/Line - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},
-          {"id":13,"name":"Monitor Input 3+4 (stereo) - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":true},
-          {"id":14,"name":"Microphone - Angetube Live Camera","type":"INPUT","cycled":false,"active":true},
-          {"id":15,"name":"Digital Input (S/PDIF) - Angetube Live Camera","type":"INPUT","cycled":false,"active":true},
+          {"id":12,"name":"Input 1 Inst/Line - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":false},
+          {"id":13,"name":"Monitor Input 3+4 (stereo) - Scarlett Solo 4th Gen","type":"INPUT","cycled":false,"active":false},
+          {"id":14,"name":"Microphone - Angetube Live Camera","type":"INPUT","cycled":false,"active":false},
+          {"id":15,"name":"Digital Input (S/PDIF) - Angetube Live Camera","type":"INPUT","cycled":false,"active":false},
           {"id":20,"name":"Digital Output (S/PDIF) - Ryzen HD Audio Controller","type":"OUTPUT","cycled":true,"active":true}
         ]'';
         cycle-input-hotkey = ["disabled"];
