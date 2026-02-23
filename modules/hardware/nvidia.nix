@@ -11,14 +11,21 @@ in
 
   hardware.nvidia = {
     open = true;
+    gsp.enable = true;
     modesetting.enable = true;        # Required for Wayland
     nvidiaSettings = true;            # Installs nvidia-settings GUI
-    powerManagement.enable = false;    # Helps with Sleep/Resume
+    powerManagement.enable = true;    # Enables nvidia-{suspend,resume,hibernate} units
 
-    # Pull ONLY the NVIDIA driver from unstable:
-    # package = u.linuxPackages.nvidiaPackages.latest;
-    package = u.linuxPackages.nvidiaPackages.beta;
+    # Keep on the latest branch for RTX 5080 support.
+    package = u.linuxPackages.nvidiaPackages.latest;
   };
+
+  # Preserve VRAM snapshots under /var/tmp during suspend/hibernate.
+  # NixOS already sets NVreg_PreserveVideoMemoryAllocations=1 when
+  # hardware.nvidia.powerManagement.enable = true.
+  boot.extraModprobeConfig = ''
+    options nvidia NVreg_TemporaryFilePath=/var/tmp
+  '';
 
   hardware.graphics = {
     enable = true;

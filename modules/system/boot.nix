@@ -6,8 +6,8 @@ let
     config.allowUnfree = true;
   };
 in {
-  # Use the unstable kernel to match the NVIDIA driver from <nixos-unstable>. Comment out to fallback to the stable kernel.
-  boot.kernelPackages = u.linuxPackages;
+  boot.kernelPackages = u.linuxPackages; # Comment out to fallback to the stable kernel.
+  boot.kernelParams = [ "mem_sleep_default=deep" ]; # S3/deep seems to be more reliable than s2idle
 
   boot.loader = {
     systemd-boot = {
