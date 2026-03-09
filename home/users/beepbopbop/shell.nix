@@ -8,6 +8,12 @@
       ls = "eza -a --icons=always";
       nix-reload = "sudo nixos-rebuild switch";
     };
+    
+    shellInit = ''
+      if test -f ${./files/secrets/sonar-token}
+        set -gx SONAR_TOKEN (string trim (cat ${./files/secrets/sonar-token}))
+      end
+    '';
 
     interactiveShellInit = ''
       # Only run fastfetch when interactive (and not inside VSCode terminal or script)

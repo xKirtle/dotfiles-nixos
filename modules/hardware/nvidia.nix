@@ -17,15 +17,8 @@ in
     powerManagement.enable = true;    # Enables nvidia-{suspend,resume,hibernate} units
 
     # Keep on the latest branch for RTX 5080 support.
-    package = u.linuxPackages.nvidiaPackages.latest;
+    package = u.linuxPackages.nvidiaPackages.beta;
   };
-
-  # Preserve VRAM snapshots under /var/tmp during suspend/hibernate.
-  # NixOS already sets NVreg_PreserveVideoMemoryAllocations=1 when
-  # hardware.nvidia.powerManagement.enable = true.
-  boot.extraModprobeConfig = ''
-    options nvidia NVreg_TemporaryFilePath=/var/tmp
-  '';
 
   hardware.graphics = {
     enable = true;
