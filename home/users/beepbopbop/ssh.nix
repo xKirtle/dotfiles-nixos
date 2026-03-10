@@ -18,6 +18,12 @@
         identityFile = "~/.ssh/azure_unit4_rsa";
         identitiesOnly = true;
       };
+      "boopbeepbeep" = {
+        user = "username";
+        hostname = "192.168.1.21";
+        identityFile = "~/.ssh/boopbeepbeep_ed25519";
+        identitiesOnly = true;
+      };
     };
   };
 
@@ -25,4 +31,6 @@
   home.file.".ssh/github_xkirtle_ed25519.pub".source = ./files/ssh/secrets/github_xkirtle_ed25519.pub;
   home.file.".ssh/azure_unit4_rsa".source = ./files/ssh/secrets/azure_unit4_rsa;
   home.file.".ssh/azure_unit4_rsa.pub".source = ./files/ssh/secrets/azure_unit4_rsa.pub;
+  home.file.".ssh/boopbeepbeep_ed25519".source = ./files/ssh/secrets/boopbeepbeep_ed25519;
+  home.file.".ssh/boopbeepbeep_ed25519.pub".source = ./files/ssh/secrets/boopbeepbeep_ed25519.pub;
 }
